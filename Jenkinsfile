@@ -3,8 +3,8 @@ pipeline {
   stages {
     stage('make python file') {
       steps {
-        sh 'chmod +x ./make-python.sh'
-        sh './make-python.sh'
+        sh 'chmod +x ./make-python'
+        sh './make-python'
       }
       
     }
