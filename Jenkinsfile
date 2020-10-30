@@ -6,7 +6,7 @@ pipeline {
         // make file
         sh "touch helloworld.py"
         // put content in file
-        sh "echo 'print("hello world")' > helloworld.py"
+        //sh "echo 'print("hello world")' > helloworld.py"
       }
       
     }
