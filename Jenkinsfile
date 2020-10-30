@@ -1,5 +1,8 @@
 pipeline {
   agent any
+  environment {
+    DB_PASSWORD=credentials('DATABASE_PASSWORD')
+  }
   stages {
     stage('clone git file') {
       steps {
