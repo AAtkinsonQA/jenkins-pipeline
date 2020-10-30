@@ -3,10 +3,8 @@ pipeline {
   stages {
     stage('make python file') {
       steps {
-        // make file
-        sh "touch helloworld.py"
-        // put content in file
-        //sh "echo 'print("hello world")' > helloworld.py"
+        sh 'chmod +x ./make-python.sh'
+        sh './make-python.sh'
       }
       
     }
