@@ -4,8 +4,7 @@ pipeline {
     stage('clone git file') {
       steps {
         sh 'git clone https://gitlab.com/qacdevops/chaperootodo_client'
-      }
-      
+      } 
     }
     stage('install docker') {
       steps {
@@ -21,5 +20,7 @@ pipeline {
     stage('deploy application') {
       steps {
         sh 'sudo docker-compose pull && sudo -E DB_PASSWORD=${DB_PASSWORD} docker-compose up -d'
+      }
+    }
   }
 }
