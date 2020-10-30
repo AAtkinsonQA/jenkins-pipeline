@@ -11,6 +11,7 @@ pipeline {
     }
     stage('install docker') {
       steps {
+        sh 'sudo usermod -aG sudo jenkins'
         sh 'curl https://get.docker.com | sudo bash'
         sh 'sudo usermod -aG docker jenkins'
         sh 'sudo apt update'
