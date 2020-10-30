@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('clone git file') {
       steps {
-        sh 'if [! -d chaperootodo_client] 
+        sh 'if [! -d "chaperootodo_client"] 
             then
               git clone https://gitlab.com/qacdevops/chaperootodo_client
             fi'
