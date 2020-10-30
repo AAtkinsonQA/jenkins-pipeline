@@ -1,4 +1,0 @@
-#! /bin/bash
-
-touch helloworld.py
-echo 'print("Hello World!")' > helloworld.py
